@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+
+    <!DOCTYPE rdf:RDF [
+        <!ENTITY dc "http://purl.org/dc/terms/" >
+        <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+        <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+        <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+        <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+        <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+        <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+        <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+        <!ENTITY cst "http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#" >
+        <!ENTITY ncit "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#" >
+    ]>
+
+    <rdf:RDF xmlns="http://idea.rpi.edu/ontologies/R7/ajcc_R7_staging_axioms.owl#"
+        xml:base="http://idea.rpi.edu/ontologies/R7/ajcc_R7_staging_axioms.owl"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:dc="http://purl.org/dc/terms/"
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+        xmlns:ncit="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+        xmlns:cst="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#">
+
+        <owl:Ontology rdf:about="http://idea.rpi.edu/ontologies/R7/ajcc_R7_staging_axioms.owl">
+            <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version 0.1</owl:versionInfo>
+            <dc:version></dc:version>>
+            <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tetherless World Constellation, 
+                Rensselaer Polytechnic Institute
+            </dc:creator>
+            <dc:title xml:lang="en">AJCC Cancer Staging Ontology - R7</dc:title>
+            <dc:source xml:lang="en">AJCC Cancer Staging R7
+			This ontology is our interpretation of the staging criteria available at 
+			https://cancerstaging.org/references-tools/quickreferences/Documents/BreastMedium.pdf. 
+			We, the developers of the ontology, assume full responsibility for the statements contained 
+			in this file.</dc:source>
+            <owl:imports rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl"/>
+        </owl:Ontology>
+    
+
+	<!-- R7_Stage_0 -->
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_0" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;Tis"/>
+			<rdf:Description rdf:about="&cst;N0"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+
+	<!-- R7_Stage_IA -->
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IA" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T1"/>
+			<rdf:Description rdf:about="&cst;N0"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+
+	<!-- R7_Stage_IB -->
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IB" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T0"/>
+			<rdf:Description rdf:about="&cst;N1mi"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IB" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T1"/>
+			<rdf:Description rdf:about="&cst;N1mi"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+
+	<!-- R7_Stage_IIA -->
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIA" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T0"/>
+			<rdf:Description rdf:about="&cst;N1"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIA" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T1"/>
+			<rdf:Description rdf:about="&cst;N1"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIA" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T2"/>
+			<rdf:Description rdf:about="&cst;N0"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+
+	<!-- R7_Stage_IIB -->
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIB" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T2"/>
+			<rdf:Description rdf:about="&cst;N1"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIB" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T3"/>
+			<rdf:Description rdf:about="&cst;N0"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+
+	<!-- R7_Stage_IIIA -->
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIIA" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T0"/>
+			<rdf:Description rdf:about="&cst;N2"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIIA" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T1"/>
+			<rdf:Description rdf:about="&cst;N2"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIIA" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T2"/>
+			<rdf:Description rdf:about="&cst;N2"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIIA" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T3"/>
+			<rdf:Description rdf:about="&cst;N1"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIIA" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T3"/>
+			<rdf:Description rdf:about="&cst;N2"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+
+	<!-- R7_Stage_IIIB -->
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIIB" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T4"/>
+			<rdf:Description rdf:about="&cst;N0"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIIB" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T4"/>
+			<rdf:Description rdf:about="&cst;N1"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIIB" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;T4"/>
+			<rdf:Description rdf:about="&cst;N2"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+
+	<!-- R7_Stage_IIIC -->
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IIIC" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;N3"/>
+			<rdf:Description rdf:about="&cst;M0"/>
+		</owl:intersectionOf>
+        </owl:Class>
+
+	<!-- R7_Stage_IV -->
+	<owl:Class>
+        <rdfs:subClassOf rdf:resource="&cst;R7_Stage_IV" />
+        <owl:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="&cst;M1"/>
+		</owl:intersectionOf>
+        </owl:Class></rdf:RDF>

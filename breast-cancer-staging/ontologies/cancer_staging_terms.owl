@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#">
+
+  <owl:Ontology rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl">
+    <dc:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage">
+    <rdfs:label>AJCC 7th Edition Stage</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_0">
+    <rdfs:label>Stage 0 (AJCC 7th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_I">
+    <rdfs:label>Stage I</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_IA">
+    <rdfs:label>Stage IA (AJCC 7th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_I"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_IB">
+    <rdfs:label>Stage IB (AJCC 7th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_I"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_II">
+    <rdfs:label>Stage II</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_IIA">
+    <rdfs:label>Stage IIA (AJCC 7th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_II"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_IIB">
+    <rdfs:label>Stage IIB (AJCC 7th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_II"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_III">
+    <rdfs:label>Stage III</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_IIIA">
+    <rdfs:label>Stage IIIA (AJCC 7th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_III"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_IIIB">
+    <rdfs:label>Stage IIIB (AJCC 7th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_III"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_IIIC">
+    <rdfs:label>Stage IIIC (AJCC 7th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R7_Stage_III"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage">
+    <rdfs:label>AJCC 8th Edition Stage</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_0">
+    <rdfs:label>Stage 0 (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_I">
+    <rdfs:label>Stage I (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage"/>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mammogram</ns0:hasRecommendedTest>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymph Node Biopsy</ns0:hasRecommendedTest>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Receptor Tests</ns0:hasRecommendedTest>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation Therapy</ns0:hasTreatmentOption>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endocrine Therapy</ns0:hasTreatmentOption>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surgery</ns0:hasTreatmentOption>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_IA">
+    <rdfs:label>Stage IA (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_I"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_IB">
+    <rdfs:label>Stage IB (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_I"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_II">
+    <rdfs:label>Stage II (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage"/>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mammogram</ns0:hasRecommendedTest>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymph Node Biopsy</ns0:hasRecommendedTest>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Receptor Tests</ns0:hasRecommendedTest>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation Therapy</ns0:hasTreatmentOption>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endocrine Therapy</ns0:hasTreatmentOption>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surgery</ns0:hasTreatmentOption>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_IIA">
+    <rdfs:label>Stage IIA (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_II"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_IIB">
+    <rdfs:label>Stage IIB (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_II"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_III">
+    <rdfs:label>Stage III (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage"/>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breast Biopsy</ns0:hasRecommendedTest>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bone Scan</ns0:hasRecommendedTest>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HER2 Test</ns0:hasRecommendedTest>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Histologic Typing</ns0:hasRecommendedTest>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemotherapy</ns0:hasTreatmentOption>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mastectomy</ns0:hasTreatmentOption>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lumpectomy</ns0:hasTreatmentOption>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_IIIA">
+    <rdfs:label>Stage IIIA (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_III"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_IIIB">
+    <rdfs:label>Stage IIIB (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_III"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_IIIC">
+    <rdfs:label>Stage IIIC (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_III"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage_IV">
+    <rdfs:label>Stage IV (AJCC 8th Edition)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#R8_Stage"/>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathology Report</ns0:hasRecommendedTest>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Receptor Testing</ns0:hasRecommendedTest>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hormone Receptor Test</ns0:hasRecommendedTest>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HER2 Test</ns0:hasRecommendedTest>
+    <ns0:hasRecommendedTest rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Histologic Typing</ns0:hasRecommendedTest>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemotherapy</ns0:hasTreatmentOption>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Targeted Therapy</ns0:hasTreatmentOption>
+    <ns0:hasTreatmentOption rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole Body Treatment</ns0:hasTreatmentOption>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T">
+    <rdfs:label>Generic T Stage Finding</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48885"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T0">
+    <rdfs:label>T0 Stage Finding</rdfs:label>
+    <rdfs:comment>Main tumor cannot be found</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48719"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Tis">
+    <rdfs:label>Tis Stage Finding</rdfs:label>
+    <rdfs:comment>Carcinoma In Situ</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48738"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1">
+    <rdfs:comment>Tumor 2 cm or less in greatest dimension</rdfs:comment>
+    <rdfs:label>T1 Stage Finding</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48720"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1a">
+    <rdfs:label>T1a Stage Finding</rdfs:label>
+    <rdfs:comment>Tumor greater than 0.1 cm, up to 0.5 cm in greatest dimension</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48721"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1a_m">
+    <rdfs:label>T1a(m) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1a"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1a_s">
+    <rdfs:label>T1a(s) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1a"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1a1">
+    <rdfs:label>T1a1 Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1a"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1a2">
+    <rdfs:label>T1a2 Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1a"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1b">
+    <rdfs:comment>Tumor greater than 0.5 cm, up to 1 cm in greatest dimension</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48722"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1b1">
+    <rdfs:label>T1b1 Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1b"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1b2">
+    <rdfs:label>T1b2 Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1b"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1b_m">
+    <rdfs:label>T1b(m) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1b"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1b_s">
+    <rdfs:label>T1b(s) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1b"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1c">
+    <rdfs:label>T1c Stage Finding</rdfs:label>
+    <rdfs:comment>Tumor greater than 1 cm, but not more than 2 cm in greatest dimension</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48723"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1d">
+    <rdfs:label>T1d Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1mic">
+    <rdfs:label>T1mic Stage Finding</rdfs:label>
+    <rdfs:comment>Microinvasion of 0.1 cm or less in its largest dimension</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C95805"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1NOS">
+    <rdfs:label>T1NOS Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1NOS_s">
+    <rdfs:label>T1NOS(s) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T1NOS"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2">
+    <rdfs:label>T2 Stage Finding</rdfs:label>
+    <rdfs:comment>Tumor greater than 2 cm but not more than 5 cm in greatest dimension</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48724"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2_m">
+    <rdfs:label>T2(m) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2_s">
+    <rdfs:label>T2(s) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2a">
+    <rdfs:label>T2a Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2a1">
+    <rdfs:label>T2a1 Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2a"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2a2">
+    <rdfs:label>T2a2 Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2a"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2b">
+    <rdfs:label>T2b Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2c">
+    <rdfs:label>T2c Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2d">
+    <rdfs:label>T2d Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2NOS">
+    <rdfs:label>T2NOS Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2aNOS">
+    <rdfs:label>T2NOS Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T2a"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3">
+    <rdfs:comment>Tumor greater than 5 cm in greatest dimension</rdfs:comment>
+    <rdfs:label>T3 Stage Finding</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48728"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3_m">
+    <rdfs:label>T3(m) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3_s">
+    <rdfs:label>T3(s) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3a">
+    <rdfs:label>T3a Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3b">
+    <rdfs:label>T3b Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3c">
+    <rdfs:label>T3c Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3d">
+    <rdfs:label>T3d Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3NOS">
+    <rdfs:label>T3NOS Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T3"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T4">
+    <rdfs:label>T4 Stage Finding</rdfs:label>
+    <rdfs:comment>Tumor of any size with direct extension to the chest wall or to the skin, only as described in T4a and T4d</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48732"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T4a">
+    <rdfs:label>T4a Stage Finding</rdfs:label>
+    <rdfs:comment>Extension to the chest wall</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T4"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48733"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T4b">
+    <rdfs:label>T4b Stage Finding</rdfs:label>
+    <rdfs:comment>Edema (including 'orange peau'), or skin ulceration of the skin, or satellite cutaneous nodules confined to the same breast</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T4"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48734"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T4c">
+    <rdfs:label>T4c Stage Finding</rdfs:label>
+    <rdfs:comment>Both (T4a and T4b) above</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T4"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48735"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T4d">
+    <rdfs:label>T4d Stage Finding</rdfs:label>
+    <rdfs:comment>Inflammatory Carcinoma</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T4"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48736"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#TX">
+    <rdfs:label>TX Stage Finding</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48737"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#T"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N">
+    <rdfs:label>Generic N Stage Finding</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48884"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N0">
+    <rdfs:label>N0 Stage Finding</rdfs:label>
+    <rdfs:comment>There is no cancer in nearby lymph nodes</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48705"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N0_iPos">
+    <rdfs:comment>ITCs only (malignant cell clusters no larger than 2cm) in regional lymph nodes</rdfs:comment>
+    <rdfs:label>N0 (i+) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N0"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C95922"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N0_iNeg">
+    <rdfs:label>N0 (i-) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N0"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C95921"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N1">
+    <rdfs:label>N1 Stage Finding</rdfs:label>
+    <rdfs:comment>Metastasis in axillary lymph node(s), homolateral(s), mobile(s)</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48706"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N1a">
+    <rdfs:comment>Metastases in 1-3 axillary lymph nodes, at least one metastasis larger than 20 cm</rdfs:comment>
+    <rdfs:label>N1a Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N1"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48707"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N1b">
+    <rdfs:comment>Metastases in ipsilateral internal mammary sentinel lymph nodes, excluding ITCs</rdfs:comment>
+    <rdfs:label>N1b Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N1"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48708"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N1c">
+    <rdfs:comment>N1a and N1b combined</rdfs:comment>
+    <rdfs:label>N1c Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N1"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48709"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N1mi">
+    <rdfs:comment>Micrometastases (approximately 200 cells, larger than 0.2 mm, but none larger than 2.0 mm)</rdfs:comment>
+    <rdfs:label>N1mi Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N1"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C95955"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N1NOS">
+    <rdfs:label>N1NOS Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N1"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N2">
+    <rdfs:label>N2 Stage Finding</rdfs:label>
+    <rdfs:comment>Metastasis in axillary lymph node (s), homolateral(s), fixed or clinically apparent metastasis in homolateral internal mammary lymph node(s), in the absence of clinical evidence of metastasis in Axillary lymph node(s)</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48786"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N2a">
+    <rdfs:label>N2a Stage Finding</rdfs:label>
+    <rdfs:comment>Metastasis in axillary lymph node(s) fixed to each other or to other structures</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N2"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48711"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N2b">
+    <rdfs:label>N2b Stage Finding</rdfs:label>
+    <rdfs:comment>Clinically apparent metastasis in internal mammary lymph node(s), in the absence of clinical evidence of metastasis in auxiliary lymph node(s)</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N2"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48712"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N2c">
+    <rdfs:label>N2c Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N2"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48713"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N2NOS">
+    <rdfs:label>N2NOS Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N2"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N3">
+    <rdfs:label>N3 Stage Finding</rdfs:label>
+    <rdfs:comment>Metastasis in homolateral infraclavicular lymph node(s) with or without involvement of axillary lymph node(s); Or clinically apparent in homolateral internal mammary lymph node(s), in the presence of clinical evidence of metastasis in axillary lymph node(s); Or metastasis in homolateral supraclavicular lymph node(s) with or without involvement of axillary lymph node(s) or internal mammary(ies)</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48714"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N3a">
+    <rdfs:label>N3a Stage Finding</rdfs:label>
+    <rdfs:comment>Metastasis in homolateral infraclavicular lymph node(s) with or without involvement of axillary lymph node(s); Or clinically apparent in homolateral internal mammary lymph node(s), in the presence of clinical evidence of metastasis in axillary lymph node(s); Or metastasis in homolateral supraclavicular lymph node(s) with or without involvement of axillary lymph node(s) or internal mammary(ies)</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N3"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48715"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N3b">
+    <rdfs:label>N3b Stage Finding</rdfs:label>
+    <rdfs:comment>Metastasis in internal mammary(ies) and axillary lymph nodes</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N3"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48716"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N3c">
+    <rdfs:label>N3c Stage Finding</rdfs:label>
+    <rdfs:comment>Metastasis in supraclavicular lymph node(s)</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N3"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48717"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N3NOS">
+    <rdfs:label>N3NOS Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N3"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N4">
+    <rdfs:label>N4 Stage Finding</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C96026"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#NX">
+    <rdfs:label>NX Stage Finding</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48718"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#N"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M">
+    <rdfs:label>Generic M Stage Finding</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48883"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M0">
+    <rdfs:label>M0 Stage Finding</rdfs:label>
+    <rdfs:comment:>No clinical or radiographic evidence of distant metastases</rdfs:comment:>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48699"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M0_iPos">
+    <rdfs:comment:>No clinical or radiographic evidence of distant metastasesin the presence of tumor cells or and no deposits nogreater than 0.2 mm detected microscopically or by usingmolecular techniques in circulating blood, bone marrow, orother nonregional lymph node tissue in a patient withoutsymptoms or signs of metastases</rdfs:comment:>
+    <rdfs:label>M0(i+) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M0"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M0_iNeg">
+    <rdfs:label>M0(i-) Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M0"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M1">
+    <rdfs:comment:>Distant metastases detected by clinical and radiographicmeans (cM) and/or histologically proven metastases largerthan 0.2 mm (pM)</rdfs:comment:>
+    <rdfs:label>M1 Stage Finding</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48700"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M1a">
+    <rdfs:label>M1a Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M1"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48701"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M1b">
+    <rdfs:label>M1b Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M1"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48702"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M1c">
+    <rdfs:label>M1c Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M1"/>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48703"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M1NOS">
+    <rdfs:label>M1NOS Stage Finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M1"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#MX">
+    <rdfs:label>MX Stage Finding</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48704"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#M"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Grade">
+    <rdfs:label>Generic Histologic Grade Finding</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C36041"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Grade1">
+    <rdfs:label>Histologic Grade is 1</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C36039"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Grade"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Grade2">
+    <rdfs:label>Histologic Grade is 2</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C36040"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Grade"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Grade3">
+    <rdfs:label>Histologic Grade is 3</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C36042"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Grade"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Grade4">
+    <rdfs:label>Histologic Grade is 4</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C36045"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Grade"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Receptor_Status">
+    <rdfs:label>Receptor Status</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C94299"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#HER2_Pos">
+    <rdfs:label>HER2+</rdfs:label>
+    <rdfs:comment>Human Epidermal growth factor Receptor 2 is positive</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C68748"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Receptor_Status"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#HER2_Neg">
+    <rdfs:label>HER2-</rdfs:label>
+    <rdfs:comment>Human Epidermal growth factor Receptor 2 is negative</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C68749"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Receptor_Status"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#ER_Pos">
+    <rdfs:label>ER+</rdfs:label>
+    <rdfs:comment>Estrogen receptor is positive</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C15492"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Receptor_Status"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#ER_Neg">
+    <rdfs:label>ER-</rdfs:label>
+    <rdfs:comment>Estrogen receptor is negative</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C15493"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Receptor_Status"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#PR_Pos">
+    <rdfs:label>PR+</rdfs:label>
+    <rdfs:comment>Progesterone receptor is positive</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C15496"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Receptor_Status"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#PR_Neg">
+    <rdfs:label>PR-</rdfs:label>
+    <rdfs:comment>Progesterone receptor is negative</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C15497"/>
+    <rdfs:subClassOf rdf:resource="http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#Receptor_Status"/>
+  </owl:Class>
+
+</rdf:RDF>
