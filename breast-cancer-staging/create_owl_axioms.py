@@ -57,7 +57,7 @@ def createOntology(revision):
         <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
         <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
         <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-        <!ENTITY cst "http://idea.rpi.edu/ontologies/cancer_staging_terms.owl#" >
+        <!ENTITY cst "http://idea.tw.rpi.edu/projects/heals/ontologies/cancer_staging_terms.owl#" >
         <!ENTITY ncit "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#" >
     ]>
 
