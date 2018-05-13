@@ -13,13 +13,13 @@
     dc:creator """Tetherless World Constellation,
                 Rensselaer Polytechnic Institute
             """^^xsd:string ;
-    dc:source """AJCC Cancer Staging R7
+    dc:source """AJCC Cancer Staging 7th Edition (Breast Cancer Staging axioms as per the AJCC 7th Edition Guidelines.)
 			This ontology is our interpretation of the staging criteria available at
 			https://cancerstaging.org/references-tools/quickreferences/Documents/BreastMedium.pdf.
 			We, the developers of the ontology, assume full responsibility for the statements contained
 			in this file."""@en ;
-    dc:title "AJCC Cancer Staging Ontology - R7"@en ;
-    dc:version "" ;
+    dc:title "AJCC Cancer Staging Ontology - 7th Edition"@en ;
+    dc:version "version 0.1"^^xsd:string ;
     owl:imports <http://idea.tw.rpi.edu/projects/heals/ontologies/cancer_staging_terms.owl> ;
     dc:license <http://www.apache.org/licenses/LICENSE-2.0> ;
     owl:versionInfo "version 0.1"^^xsd:string .
