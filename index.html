@@ -169,12 +169,151 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="setup">
         <div class="my-auto">
             <h2 class="mb-5">Setup</h2>
-            <div align="center" class='embed-responsive' style='padding-bottom:150%'>
-                <object id="pdf" width="100%" type="application/pdf"
-                        data="./Documentation/VisualisationREADME.pdf">
-                    <span>PDF plugin is not available.</span>
-                </object>
+            <!--<div align="center" class='embed-responsive' style='padding-bottom:150%'>-->
+                <!--<object id="pdf" width="100%" type="application/pdf"-->
+                        <!--data="./Documentation/VisualisationREADME.pdf">-->
+                    <!--<span>PDF plugin is not available.</span>-->
+                <!--</object>-->
+            <!--</div>-->
+            <h3 class="mx-auto">Bringing up a Whyis VM</h3>
+            <div>
+                <p>In order to host our application on the <a href="https://github.com/tetherless-world/whyis/">Whyis
+                    framework</a>, we need to bring up a machine with Whyis
+                    installed. You could
+                    install Whyis on your host machine (if on an Ubuntu machine); but the preferred method is to do so
+                    by bringing up a VM.
+                    In order to bring up a VM, you need to have a <a href="https://www.virtualbox.org/">Virtualbox
+                        platform</a> installed.
+                </p>
+                <p>On installing the VM container, we can now proceed to installing Whyis. For the installation you
+                    need to create a <b>whyis-vm</b>
+                    directory within the home directory of your system.
+                    If on a Mac/Ubuntu Machine, to do that you could:<br/>
+                    <code>
+                        mkdir whyis-vm<br/>
+                        cd whyis-vm<br/>
+                    </code>
+                </p>
+                <p>Once we are within the whyis-vm directory(this will serve as a mounted folder between our host
+                    machine and VM), we need
+                    to download the Vagrantfile and install script to launch a Whyis machine. They can be downloaded
+                    by following the below
+                    commands.<br/>
+                    <code>
+
+                        curl -skL https://raw.githubusercontent.com/tetherless-world/whyis/release/Vagrantfile >
+                        Vagrantfile<br/>
+                        curl -skL https://raw.githubusercontent.com/tetherless-world/whyis/release/install.sh >
+                        install.sh<br/>
+                    </code>
+                </p>
+                <p>To launch a machine:<br/>
+                    <code>
+                        vagrant up<br/>
+                    </code>
+                </p>
+                <p>
+                    Once the machine is launched, we can connect to the machine, and activate the virtual
+                    environment venv.<br/>
+                    <code>
+                        vagrant ssh<br/>
+                        sudo su - whyis<br/>
+                        cd /apps/whyis<br/>
+                        source venv/bin/activate<br/>
+                    </code>
+                </p>
+                <p>Once these steps are done, we can start the Whyis server by running:<br/>
+                    <code>python manage.py runserver -h 0.0.0.0</code></p>
+
+                <p>The Whyis landing page can be accessed at:<br/>
+                    <code>http:192.168.33.36:5000</code></p>
+                <p>Let’s go ahead and register now, using the below URL:<br/>
+                    <code>http:192.168.33.36:5000/register</code></p>
+
+                <p>For further information on installation, please see:
+                    <a href="http://tetherless-world.github.io/whyis/install">http://tetherless-world.github.io/whyis/install</a>
+                </p>
             </div>
+
+            <h3 class="mx-auto"> Installing the heals2vis application</h3>
+            <div>
+                <p>
+                    Now that we have a working Whyis instance, we can install the heals2vis application: It can be
+                    downloaded by performing<br/>
+                    <code>
+                        cd /apps<br/>
+                        git clone https://github.com/cancer-staging-ontology/cancer-staging-ontology.github.io
+                    </code>
+                </p>
+                <p>
+                    Once we have downloaded the repository, we need to install the application.
+                    We only need the heals2vis directory from the above repository, we can move the heals2vis directory
+                    up a
+                    directory.<br/>
+                    <code>sudo mv cancer-staging-ontology.github.io/heals2vis .<br/>
+                        sudo chown -R whyis:whyis heals2vis/</code>
+                </p>
+                <p>Become whyis user again, to be able install the heals2vis app<br/>
+                    <code>sudo su - whyis<br/>
+                        cp heals2vis/autonomic.py whyis/</code></p>
+                <>Change directory to the heals2vis directory, and run the below command:<br/>
+                <code>cd heals2vis && pip install -e .</code></p>
+                <p>Exit the whyis user mode to restart services. Now we need to restart our webserver and queueing
+                    scheduler in order for the above installation to take effect.<br/>
+                    <code>
+                        sudo service apache2 restart<br/>
+                        sudo service celeryd restart<br/>
+
+                    </code>
+                <p>Now we can restart the server, by changing directory back to <code>/apps/whyis</code> and switch to
+                    whyis user mode.<br/>
+                    <code>sudo su - whyis<br/>
+                        cd /apps/whyis<br/>
+                        python manage.py runserver -h 0.0.0.0<br/>
+                    </code></p>
+                <p>We should be able to see a heals2vis landing page when we try <a href="http://192.168.33.36:5000">192.168.33.36:5000</a>.
+                </p>
+            </div>
+
+            <h3 class="mx-auto">Loading the data into Whyis’s Blazegraph instance</h3>
+
+            <div>
+                <p>We need to load in the SEER patient records, the CIViC drug dataset and the Cancer Staging Ontology
+                    to be able to load the Whyis physicianView and derive knowledge by inferencing.
+                    The below commands need to be run to load knowledge into the Blazegraph instance.</p>
+                <p>
+                    Considering we are at the point, we stopped at last; we just need to stop the server by using a kill
+                    command <kbd>Ctrl+C</kbd>; to be able to proceed with the data load<br/>
+                    <code>python manage.py load -i /apps/heals2vis/data/viz.ttl -f turtle<br/>
+                        python manage.py load -i /apps/heals2vis/data/cancer staging terms.owl.ttl -f turtle<br/>
+                        python manage.py load -i /apps/heals2vis/data/civic-out.txt -f trig<br/>
+                        python manage.py load -i /apps/heals2vis/data/seer-out-sample.txt -f trig<br/>
+                    </code>
+
+                </p>
+                <p>
+                    Now that the data is loaded we need to pre-run the inferencer on these records, it can be run by the
+                    below command: <br/>
+                    <code>python manage.py test agent -a heals2vis.inferencer.Infer</code>
+
+                </p>
+            </div>
+
+
+            <h3 class="mx-auto">Accessing the view</h3>
+            <div>
+                <p>
+                    Once these steps are done, we can restart the Whyis server by running:<br/>
+                    <code>python manage.py runserver -h 0.0.0.0</code>
+                </p>
+                <p>
+                    Now that we have the heals2vis application installed and the data loaded in: We can explore the
+                    interactive physician view at: <a href="http://192.168.33.36:5000/physicianView">http://192.168.33.36:5000/physicianView</a>.
+                    Make sure to click this URL twice, it gives an error on the first hit due to a known bug.
+
+                </p>
+            </div>
+
         </div>
     </section>
 
