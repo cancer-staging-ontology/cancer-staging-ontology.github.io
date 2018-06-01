@@ -286,7 +286,7 @@
                     Considering we are at the point, we stopped at last; we just need to stop the server by using a kill
                     command <kbd>Ctrl+C</kbd>; to be able to proceed with the data load<br/>
                     <code>python manage.py load -i /apps/heals2vis/data/viz.ttl -f turtle<br/>
-                        python manage.py load -i /apps/heals2vis/data/cancer staging terms.owl.ttl -f turtle<br/>
+                        python manage.py load -i /apps/heals2vis/data/cancer_staging_terms.owl.ttl -f turtle<br/>
                         python manage.py load -i /apps/heals2vis/data/civic-out.txt -f trig<br/>
                         python manage.py load -i /apps/heals2vis/data/seer-out-sample.txt -f trig<br/>
                     </code>
@@ -295,7 +295,7 @@
                 <p>
                     Now that the data is loaded we need to pre-run the inferencer on these records, it can be run by the
                     below command: <br/>
-                    <code>python manage.py test agent -a heals2vis.inferencer.Infer</code>
+                    <code>python manage.py test_agent -a heals2vis.inferencer.Infer</code>
 
                 </p>
             </div>
