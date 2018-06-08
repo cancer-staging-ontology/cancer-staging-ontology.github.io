@@ -83,7 +83,7 @@
 :R8_Stage_0 a owl:Class ;
 	rdfs:comment "A non-invasive cancer where abnormal cells have been found in the lining of the breast milk duct where the atypical cells have not spread outside of the ducts or lobules into the surrounding breast tissue"^^xsd:string ;
 	rdfs:label ""^^xsd:string ;
-	rdfs:label "Stage 0 (AJCC 8th Edition)"^^xsd:string ;
+	rdfs:label "Stage 0"^^xsd:string ;
     rdfs:subClassOf :R8_Stage .
 
 :R8_Stage_I a owl:Class ;
@@ -99,12 +99,12 @@
 
 :R8_Stage_IA a owl:Class ;
 	rdfs:comment "The tumor is smaller is 20mm or smaller and has not spread to the lymph nodes."^^xsd:string ;
-	rdfs:label "Stage IA (AJCC 8th Edition)"^^xsd:string ;
+	rdfs:label "Stage IA"^^xsd:string ;
     rdfs:subClassOf :R8_Stage_I .
 
 :R8_Stage_IB a owl:Class ;
 	rdfs:comment "Lymph nodes have cancer evidence with small clusters of cells between the approximate size of 0.2mm to 2.0 mm."^^xsd:string ;
-	rdfs:label "Stage IB (AJCC 8th Edition)"^^xsd:string ;
+	rdfs:label "Stage IB"^^xsd:string ;
     rdfs:subClassOf :R8_Stage_I .
 
 :R8_Stage_II a owl:Class ;
@@ -120,12 +120,12 @@
 
 :R8_Stage_IIA a owl:Class ;
 	rdfs:comment "No actual tumor is associated with the cancerous cells and less than four auxillary lymph nodes have cancer cells present. The tumor is less than 2 centimeters and less than four auxillary lymph nodes have cancer cells present."^^xsd:string ;
-	rdfs:label "Stage IIA (AJCC 8th Edition)"^^xsd:string ;
+	rdfs:label "Stage IIA"^^xsd:string ;
     rdfs:subClassOf :R8_Stage_II .
 
 :R8_Stage_IIB a owl:Class ;
 	rdfs:comment "The tumor is between the 2 and 5 centimeters and has spread to less than four axillary lymph nodes. The tumor is larger than five centimeters, but has not spread to any axillary lymph nodes."^^xsd:string ;
-	rdfs:label "Stage IIB (AJCC 8th Edition)"^^xsd:string ;
+	rdfs:label "Stage IIB"^^xsd:string ;
     rdfs:subClassOf :R8_Stage_II .
 
 :R8_Stage_III a owl:Class ;
@@ -142,23 +142,23 @@
 
 :R8_Stage_IIIA a owl:Class ;
 	rdfs:comment "The tumor is larger than the 50mm, and small clusters of breast cancer cells are found in the lymph nodes between the size of 0.2 mm - 2.0 mm"^^xsd:string ;
-	rdfs:label "Stage IIIA (AJCC 8th Edition)"^^xsd:string ;
+	rdfs:label "Stage IIIA"^^xsd:string ;
     rdfs:subClassOf :R8_Stage_III .
 
 :R8_Stage_IIIB a owl:Class ;
 	rdfs:comment "The tumor may be of any size, and cancer has invaded the chest wall or breast skin with evidence of swelling, inflammation, or ulcers (such as with cases like inflammatory breast cancer). The cancer may also have invaded up to 9 nearby lymph nodes"^^xsd:string ;
-	rdfs:label "Stage IIIB (AJCC 8th Edition)"^^xsd:string ;
+	rdfs:label "Stage IIIB"^^xsd:string ;
     rdfs:subClassOf :R8_Stage_III .
 
 :R8_Stage_IIIC a owl:Class ;
 	rdfs:comment "No actual tumor is found in the breast (such as with cases like inflammatory breast cancer) or the tumor may be of any size. Cancer may have invaded the chest wall or breast skin with evidence of swelling, inflammation, or ulcers and cancer has also invaded 10 or more lymph nodes under the arm"^^xsd:string ;
 	rdfs:label ""^^xsd:string ;
-	rdfs:label "Stage IIIC (AJCC 8th Edition)"^^xsd:string ;
+	rdfs:label "Stage IIIC"^^xsd:string ;
     rdfs:subClassOf :R8_Stage_III .
 
 :R8_Stage_IV a owl:Class ;
 	rdfs:comment "Cancer has spread beyond the breast and nearby lymph nodes to other organs of the body, such as the lungs, distant lymph nodes, skin, bones, liver, or brain"^^xsd:string ;
-	rdfs:label "Stage IV (AJCC 8th Edition)"^^xsd:string ;
+	rdfs:label "Stage IV"^^xsd:string ;
     rdfs:subClassOf :R8_Stage ;
     cst:hasRecommendedTest "Pathology Report"^^xsd:string ,
                             "Receptor Testing"^^xsd:string ,
