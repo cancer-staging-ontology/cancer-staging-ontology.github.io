@@ -143,7 +143,6 @@
     rdfs:subClassOf :R8_Stage_III .
 
 :R8_Stage_IIIC a owl:Class ;
-	rdfs:label ""^^xsd:string ;
 	rdfs:label "Stage IIIC"^^xsd:string ;
     rdfs:subClassOf :R8_Stage_III .
 
