@@ -83,7 +83,7 @@
 :R8_Stage_0 a owl:Class ;
     cst:hasRecommendedTest "Mammogram"^^xsd:string;
     cst:hasTreatmentOption "Radiation Therapy"^^xsd:string ,
-                            "Surgery"^^xsd:string .
+                            "Surgery"^^xsd:string ;
 	rdfs:label ""^^xsd:string ;
 	rdfs:label "Stage 0"^^xsd:string ;
     rdfs:subClassOf :R8_Stage .
