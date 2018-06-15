@@ -81,6 +81,7 @@
 	rdfs:label "AJCC 8th Edition Stage".
 
 :R8_Stage_0 a owl:Class ;
+	rdfs:comment "A non-invasive cancer where abnormal cells have been found in the lining of the breast milk duct where the atypical cells have not spread outside of the ducts or lobules into the surrounding breast tissue"^^xsd:string ;
 	rdfs:label ""^^xsd:string ;
 	rdfs:label "Stage 0"^^xsd:string ;
     rdfs:subClassOf :R8_Stage .
