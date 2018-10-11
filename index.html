@@ -254,6 +254,61 @@
                 
                 
             </div>
+            
+            <h3 class="mx-auto">Alternative method to install Whyis on a Linux box</h3>
+            <div>
+                <p>In order to host our application on the <a href="https://github.com/tetherless-world/whyis/">Whyis
+                    framework</a>, we need to bring up a machine with Whyis
+                    installed. You could
+                    install Whyis on your host machine (if on an Ubuntu machine).
+                </p>
+                <p>Once we have a Ubuntu box, we can now proceed to installing Whyis. For the installation you
+                    need to create a <b>whyis-vm</b>
+                    directory within the home directory of your system.
+                    If on a Mac/Ubuntu Machine, to do that you could:<br/>
+                    <code>
+                        mkdir whyis-vm<br/>
+                        cd whyis-vm<br/>
+                    </code>
+                </p>
+                <p>Once we are within the whyis-vm directory(this will serve as a mounted folder between our host
+                    machine and VM), we need
+                    to download the install script to launch a Whyis machine. They can be downloaded
+                    by following the below
+                    commands.<br/>
+                    <code>                       
+                        curl -skL https://github.com/tetherless-world/whyis/blob/release/install.sh >
+                        install.sh<br/>
+                    </code>
+                </p>
+                
+                <p>
+                    Once the install script is downloaded, we can install Whyis, and activate the virtual
+                    environment venv.<br/>
+                    <code>
+                        sh install.sh<br/>
+                        sudo su - whyis<br/>
+                        cd /apps/whyis<br/>
+                        source venv/bin/activate<br/>
+                    </code>
+                </p>
+                <p>Once these steps are done, we can start the Whyis server by running:<br/>
+                    <code>python manage.py runserver -h 0.0.0.0</code></p>
+
+                <p>The Whyis landing page can be accessed at:<br/>
+                    <code>http:0.0.0.0:5000</code></p>
+                <p>Let’s go ahead and register now, using the below URL:<br/>
+                    <code>http:0.0.0.0:5000/register</code></p>
+
+                <p>For further information on installation, please see:
+                    <a href="http://tetherless-world.github.io/whyis/install">http://tetherless-world.github.io/whyis/install</a>
+                </p>
+                <p>
+                    Please note if you use the native box method of installation, the URL that needs to be accessed is:
+                    <a href="http://0.0.0.0:5000">Landing page</a>
+                </p>
+                
+            </div>
 
             <h3 class="mx-auto"> Installing the heals2vis application</h3>
             <div>
@@ -292,6 +347,8 @@
                         python manage.py runserver -h 0.0.0.0<br/>
                     </code></p>
                 <p>We should be able to see a heals2vis landing page when we try <a href="http://192.168.33.36:5000">192.168.33.36:5000</a>.
+                </p>
+                <p>Alternative URL (for Ubuntu installation) We should be able to see a heals2vis landing page when we try <a href="http://0.0.0.0:5000">0.0.0.0:5000</a>.
                 </p>
             </div>
 
